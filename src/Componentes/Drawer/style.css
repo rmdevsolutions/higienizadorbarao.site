@@ -1,0 +1,32 @@
+.user {
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    flex: 1 1 0%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.MuiContainer-root {
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    padding: 30px;
+    margin-bottom: 50px;
+}

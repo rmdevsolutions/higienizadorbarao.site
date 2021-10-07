@@ -3,11 +3,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Sobre from './Pages/Sobre';
+import Acompanhar from './Pages/Acompanhar';
+import Importacao from './Pages/Importacao';
+import Imprimir from './Pages/Imprimir';
+import Configuracoes from './Pages/Configuracoes';
+import ConfiguracoesBD from './configuracoesBD.js';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <>
+    <ConfiguracoesBD />
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact={true} component={Acompanhar} />
+        <Route path="/importar" component={Importacao} />
+        <Route path="/acompanhar" component={Acompanhar} />
+        <Route path="/imprimir" component={Imprimir} />
+        <Route path="/configuracoes" component={Configuracoes} />
+        <Route path="*" component={Acompanhar} />
+      </Switch>
+    </ BrowserRouter>
+  </>,
   document.getElementById('root')
 );
 

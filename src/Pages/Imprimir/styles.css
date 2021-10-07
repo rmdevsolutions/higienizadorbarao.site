@@ -1,0 +1,47 @@
+.indicador {
+    background: #dcdcdc;
+    border-bottom: 2px #5c5f70 solid;
+}
+
+.item {
+    margin-top: 0 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px
+}
+
+.item .css-ahj2mt-MuiTypography-root {
+    font-weight: bold;
+    font-size: 12px !important;
+}
+
+.sub-item .css-ahj2mt-MuiTypography-root {
+    font-size: 15px !important;
+}
+
+.sub-item {
+    justify-content: space-between !important;
+    align-items: center !important;
+    display: flex !important;
+}
+
+.box {
+    margin-top: 1rem !important;
+}
+
+.containers {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.item-par {
+    background: #cccc
+}
+
+.titulo {
+    margin-top: 5rem !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+}
