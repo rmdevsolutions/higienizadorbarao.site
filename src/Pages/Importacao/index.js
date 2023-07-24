@@ -19,7 +19,9 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 const steps = ['Selecionar arquivo xlsx', 'Validar Informações', 'Salvar Listagem'];
 const columns = [
-    { field: 'CPF', headerName: 'CPF', width: 200 }
+    { field: 'CPF', headerName: 'CPF', width: 200 },
+    { field: 'ANO', headerName: 'ANO', width: 200 },
+    { field: 'MES', headerName: 'MES', width: 200 }
 ]
 
 
@@ -108,6 +110,8 @@ export default function HorizontalNonLinearStepper() {
             nrow.map(f => {
                 rowss_.push({
                     CPF: f[0],
+                    ANO: f[1],
+                    MES: f[2],
                     ID: Math.random()
                 })
             })
